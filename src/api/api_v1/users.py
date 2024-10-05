@@ -1,16 +1,13 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter
+from typing import List
 from src.api.schemas.users import UserResponse
+from src.services.users import get_users
 user_router = APIRouter(
     prefix="/users",
     tags=["users"],
 )
 
-@user_router.get("/", response_model=UserResponse)
+@user_router.get("/", response_model=List[UserResponse])
 async def read_users():
-    import os
-    cwd = os.getcwd()
-    return {
-        "id": 1,
-        "username": f"thachit: {str(cwd)}",
-        "email": "nguyencothach1989@gmail.com",
-    }
+    response = await get_users()
+    return response
