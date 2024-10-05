@@ -1,5 +1,5 @@
 
-async def get_users():
+async def get_all_users():
     return [
         {
             "id": 1,
