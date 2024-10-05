@@ -6,4 +6,4 @@ class UserBase(BaseModel):
 
 
 class UserResponse(UserBase):
-    pass
+    id: int
