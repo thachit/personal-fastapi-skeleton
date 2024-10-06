@@ -1,6 +1,7 @@
-# Foobar
+# Fastapi Skeleton
 
-Foobar is a Python library for dealing with word pluralization.
+Fastapi Skeleton is a code base to start any project using Fast API
+
 
 ## Installation
 
