@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from typing import List
-from src.api.schemas.users import UserResponse
+from src.schemas.users import UserResponse
 from src.services.users import get_all_users
 user_router_v1 = APIRouter(
     prefix="/users",
