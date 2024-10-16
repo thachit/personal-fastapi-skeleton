@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "3.9.9"
 uvicorn = "^0.15.0"
-fastapi = "^0.89.0"
+fastapi = "^0.115.2"
 sqlalchemy = "^2.0.35"
 alembic = "^1.13.3"
 psycopg2 = "^2.9.9"

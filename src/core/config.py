@@ -1,8 +1,9 @@
 import os
-from pydantic import BaseSettings
 
 class Config:
     APP_NAME = os.getenv("APP_NAME", "My Fast API app")
+    APP_HOST = os.getenv("APP_HOST", "0.0.0.0")
+    APP_PORT = os.getenv("APP_PORT", 8000)
     ADMIN_EMAIL = os.getenv("ADMIN_EMAIL", "nguyencothach1989@gmail.com")
     DATABASE_DRIVER = os.getenv("DATABASE_DRIVER", "postgresql+psycopg2")
     DATABASE_HOST = os.getenv("DATABASE_HOST", "localhost")
