@@ -13,7 +13,7 @@ database = URL.create(
     password=Config.DATABASE_PASSWORD
 )
 
-engine = create_engine(database, echo=True if Config.DEBUG else False)
+engine = create_engine(database, echo=True if Config.DEBUG else False, pool_pre_ping=True)
 session_local = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
