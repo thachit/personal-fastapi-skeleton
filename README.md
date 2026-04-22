@@ -23,6 +23,26 @@ alembic upgrade head
 
 ## Usage
 
+### Environments
+```bash
+PYTHONUNBUFFERED=0
+DEBUG=true
+APP_NAME=
+APP_HOST=
+APP_PORT=
+APP_ENV=
+APP_VERSION=
+export DATABASE_HOST=
+export DATABASE_PORT=
+export DATABASE_USER=
+export DATABASE_PASSWORD=
+export DATABASE_NAME=
+export SECRET_KEY=
+export REFRESH_SECRET_KEY=
+export TOKEN_EXPIRATION=86400
+export REFRESH_TOKEN_EXPIRATION=2592000
+```
+
 ### Development
 ```bash
 uvicorn src.app:fast_api --host=<APP_HOST> --port=<APP_PORT> --log-level=debug
