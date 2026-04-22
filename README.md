@@ -13,6 +13,14 @@ poetry shell
 poetry install --no-root
 ```
 
+## Create new model
+
+## Migrate new model to Postgresql
+```shell
+alembic revision --autogenerate -m "initial migration"
+alembic upgrade head
+```
+
 ## Usage
 
 ### Development
