@@ -164,3 +164,4 @@ cython_debug/
 # Docker
 docker_build.log
 docker_local.env
+local.proposal
