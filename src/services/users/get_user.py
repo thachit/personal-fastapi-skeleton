@@ -1,9 +1,9 @@
+from src.db.db import get_session
+from src.models.user import User
+
 
 async def get_all_users():
-    return [
-        {
-            "id": 1,
-            "username": "thachit",
-            "email": "nguyencothach1989@gmail.com",
-        }
-    ]
+    with get_session() as session:
+        user_objs = session.query(User).all()
+
+        return user_objs

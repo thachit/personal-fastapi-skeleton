@@ -14,3 +14,9 @@ MONTH = DAY * 31
 
 def t2i(t: int):
     return int(arrow.get(t).format(TIME_FORMAT))
+
+def dt2i(dt):
+    return int(arrow.get(dt).timestamp())
+
+def dt_format(dt):
+    return arrow.get(dt).isoformat().replace("+00:00", "Z")

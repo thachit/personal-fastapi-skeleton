@@ -12,6 +12,12 @@ fastapi = "^0.115.2"
 sqlalchemy = "^2.0.35"
 alembic = "^1.13.3"
 psycopg2-binary = "^2.9.11"
+pyjwt = "^2.10.1"
+bcrypt = "^5.0.0"
+arrow = "^1.4.0"
+pydantic = {version = "^2.12.3", extras = ["email"]}
+requests = "^2.32.5"
+aiohttp = "^3.13.2"
 
 
 [build-system]

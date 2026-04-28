@@ -18,7 +18,7 @@ from src.db.db import Base
 config = context.config
 
 db_url = URL.create(
-    drivername="postgresql",
+    drivername=ProjectConfig.DATABASE_DRIVER,
     username=ProjectConfig.DATABASE_USER,
     password=ProjectConfig.DATABASE_PASSWORD,
     host=ProjectConfig.DATABASE_HOST,
